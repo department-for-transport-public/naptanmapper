@@ -1,0 +1,22 @@
+Package: naptanmapper
+Title: Maps NaPTAN Stops
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Allows individuals to see National Public Transport Access Nodes (NaPTAN) data on a map. It ustilises the naptanr package to access live NaPTAN API data, and is filterable both by locality and specific stops. Data for the selection is displayed in a searchable table. This app is written in the R programming language. The NaPTAN dataset provides the location and type of every location you can join or leave public transport in England, Scotland and Wales. Further details and documentation on the NaPTAN API can be found here..
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    dplyr,
+    leaflet,
+    naptanr,
+    reactable,
+    sf,
+    shiny,
+    shinyBS,
+    shinycssloaders,
+    shinyWidgets
