@@ -17,7 +17,9 @@ To set up RStudio Cloud to run this app:
 3. Create an account and verify email
 4. Select "New project" > "New RStudio project"
 
-This will open RStudio in your browser. **Make sure you are in the Console** before running the installation code (1.2) and running the app (1.3).
+This will open RStudio in your browser. **Make sure you are in the Console** before running the installation code (1.2) and running the app (1.3). 
+
+![image](https://user-images.githubusercontent.com/94065155/189688647-c61990fa-6853-4325-839b-b0f2adc785a5.png)
 
 ### 1.2 Installation
 You will need to install the package from GitHub before being able to run the app. This tasks only needs to be completed once.
@@ -42,6 +44,12 @@ It should look something like this:
 ![image](https://user-images.githubusercontent.com/94065155/189182789-0a6832d6-dd73-44ee-9e86-3459331b284c.png)
 
 Run the above line of code every time you want to access the app. It will pull in the most recent data from the API each time it is run.
+
+#### 1.3.1 Possible issues running the app
+1. The app may close after some time if left dormant. This is not a problem. Simply re-run the above code line (1.3) to re-boot the app. 
+2. Some errors may appear in the console once the app is run. So long as the app continues to function please ignore these; they occur due to breaks in the logiv whilst reactive fatures load and should correct themselves
+3. Sometimes, the app will close but the background code will keep running. If you are having problems re-running the app code (1.3), see if the console is running. TO check this, look in the top right corner of the console. If there is a red stp button this means the console is running and will not run any new code. **Simply select the red stop button to stop the console, and run the app code again (1.3).**
+![image](https://user-images.githubusercontent.com/94065155/189690058-386c637a-b97d-455a-8b2a-6f3a50096692.png)
 
 ## 2 Features
 ### 2.1 Inputs
