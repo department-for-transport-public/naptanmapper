@@ -22,7 +22,7 @@ This will open RStudio in your browser. **Make sure you are in the Console** bef
 ![image](https://user-images.githubusercontent.com/94065155/189688647-c61990fa-6853-4325-839b-b0f2adc785a5.png)
 
 ### 1.2 Installation
-You will need to install the package from GitHub before being able to run the app. This tasks only needs to be completed once.
+You will need to install the package from GitHub before being able to run the app. **This tasks only needs to be completed once.**
 
 You can install the development version of naptanr from [GitHub](https://github.com/) by pasting the below code into your RStudio console:
 
