@@ -1,5 +1,5 @@
 # naptanmapper
-naptanmapper is an R package, created to allow individuals to see National Public Transport Access Nodes (NaPTAN) data on a map. It utilises the [naptanr package](https://github.com/department-for-transport-public/naptanr) to access live NaPTAN API data, and is filterable both by locality and specific stops. Data for the selection is displayed in a searchable table. This app is written in the R programming language.
+naptanmapper is an R package, created to allow individuals to see National Public Transport Access Nodes (NaPTAN) data on a map. It utilises the [naptanr package](https://github.com/department-for-transport-public/naptanr) to access live NaPTAN API data, and is filterable both by locality and specific stop. Data for the selection is displayed in a searchable table. This app is written in the R programming language.
 
 The NaPTAN dataset provides the location and type of every location you can join or leave public transport in England, Scotland and Wales. Further details and documentation on NaPTAN can be found [here](https://beta-naptan.dft.gov.uk/), and documenation on the NaPTAN API can be found [here](https://www.api.gov.uk/dft/national-public-transport-access-nodes-naptan-api/#national-public-transport-access-nodes-naptan-api).
 
@@ -12,7 +12,7 @@ You can install R and RStudio (recommended interface to use), for free, followin
 If you do not want to download R, you can also access the tool using RStudio Cloud. RStudio is an integrated development environment for R, and the Cloud version can be accessed [here](https://rstudio.cloud/plans/free) for free.
 
 To set up RStudio Cloud to run this app:
-1. Naviagte to [(https://rstudio.cloud/plans/free)](https://rstudio.cloud/plans/free)
+1. Navigate to [(https://rstudio.cloud/plans/free)](https://rstudio.cloud/plans/free)
 2. Click "Sign up"
 3. Create an account and verify email
 4. Select "New project" > "New RStudio project"
@@ -28,6 +28,7 @@ You can install the development version of naptanr from [GitHub](https://github.
 
 ``` r
 install.packages("remotes")
+library(remotes)
 remotes::install_github("department-for-transport-public/naptanmapper")
 ```
 
@@ -47,8 +48,8 @@ Run the above line of code every time you want to access the app. It will pull i
 
 #### 1.3.1 Possible issues running the app
 1. The app may close after some time if left dormant. This is not a problem. Simply re-run the above code line (1.3) to re-boot the app. 
-2. Some errors may appear in the console once the app is run. So long as the app continues to function please ignore these; they occur due to breaks in the logiv whilst reactive fatures load and should correct themselves
-3. Sometimes, the app will close but the background code will keep running. If you are having problems re-running the app code (1.3), see if the console is running. TO check this, look in the top right corner of the console. If there is a red stp button this means the console is running and will not run any new code. **Simply select the red stop button to stop the console, and run the app code again (1.3).**
+2. Some errors may appear in the console once the app is run. So long as the app continues to function please ignore these; they occur due to breaks in the logic whilst reactive features load, and should correct themselves
+3. Sometimes, the app will close but the background code will keep running. If you are having problems re-running the app code (1.3), see if the console is running. To check this, look in the top right corner of the console. If there is a red stop button this means the console is running and will not run any new code. **Simply select the red stop button to stop the console, then run the app code again (1.3).**
 ![image](https://user-images.githubusercontent.com/94065155/189690058-386c637a-b97d-455a-8b2a-6f3a50096692.png)
 
 ## 2 Features
@@ -83,7 +84,7 @@ This input is searchable. To search:
 **N.b. if the characters entered into the search do not exist in the drop down list, this input will jump back to the previous selection and you will need to start your entry again**
 
 #### 2.1.5 Clear selected stops
-This button will remove the red highlighting from any selected stops fromt he map and table. More information in the below sections (2.2.1 and 2.3).
+This button will remove the red highlighting from any selected stops from the map and table. More information in the below sections (2.2.1 and 2.3).
 
 ### 2.2 Map display
 The map displays the stop(s) dependent on the inputs selected on an OpenStreetMap background. A rough polygon has been plotted around the outermost stop points for each selection to give a rough indication of locality. The map is interactive and can be zoomed in or out.
@@ -111,13 +112,13 @@ You will need to know the Area in which the stop belongs (e.g. Cambridgeshire), 
 - Change the toggle to Locality (2.1.2)
 - Dependent in Select Variable input (2.1.3), select the correct locality by name or code (2.1.4)
 - The map will display all stops in that locality
-- Select the specific stop on the map. You can check this is the correct stop by checcking the now highlighted row
+- Select the specific stop on the map. You can check this is the correct stop by checking the now highlighted row
 - If the stop is the wrong one, select Clear selected stops (2.1.5) and repeat
 
 Once the correct stop is selected, it will be highlighted red. You can view this in the context of other stops in that locality.
 
 ## 4 Suggestions and bugs
-If you have any suggestions to improve the naptanmapper app or find any bugs, please add them in the [Issues](https://github.com/department-for-transport/naptan-mapper/issues) section of this GitHub repo. Please include information on your usage needs of the app, how to replicate the bug (if applicable), and requirements for any improvement.
+If you have any suggestions to improve the naptanmapper app or find any bugs, please add them in the [Issues](https://github.com/department-for-transport-public/naptanmapper/issues) section of this GitHub repo. Please include information on your usage needs of the app, how to replicate the bug (if applicable), and requirements for any improvement.
 
 ## 5 Contact
 If you have any further questions, please contact the NaPTAN inbox: Naptan.NPTG@dft.gov.uk
