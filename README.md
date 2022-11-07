@@ -21,6 +21,8 @@ This will open RStudio in your browser. **Make sure you are in the Console** bef
 
 ![image](https://user-images.githubusercontent.com/94065155/189688647-c61990fa-6853-4325-839b-b0f2adc785a5.png)
 
+**N.b. RStudio Cloud (free) only allows up to 1 GB of RAM per project. This may be insufficient for visualising larger areas.**
+
 ### 1.2 Installation
 You will need to install the package from GitHub before being able to run the app. **This tasks only needs to be completed once.**
 
@@ -51,6 +53,7 @@ Run the above line of code every time you want to access the app. It will pull i
 2. Some errors may appear in the console once the app is run. So long as the app continues to function please ignore these; they occur due to breaks in the logic whilst reactive features load, and should correct themselves
 3. Sometimes, the app will close but the background code will keep running. If you are having problems re-running the app code (1.3), see if the console is running. To check this, look in the top right corner of the console. If there is a red stop button this means the console is running and will not run any new code. **Simply select the red stop button to stop the console, then run the app code again (1.3).**
 ![image](https://user-images.githubusercontent.com/94065155/189690058-386c637a-b97d-455a-8b2a-6f3a50096692.png)
+4. If using RStudio Cloud (free), you will only have up to 1 GB RAM per project. For larger areas with a high number of stops, the app may not be able to load. You will need to download a local installation of RStudio and run on your local computer using [this guidance](https://rstudio-education.github.io/hopr/starting.html).
 
 ## 2 Features
 ### 2.1 Inputs
@@ -107,7 +110,7 @@ You will need to know the Area in which the stop belongs (e.g. Cambridgeshire), 
 - **Alternatively** use the search cabability of the drop down to search for a specific stop
 - The selected stop will display on the map with its relevant data in the table below
 
-### 3.2 How do I visualise a specific stop within the contet of its locality?
+### 3.2 How do I visualise a specific stop within the context of its locality?
 - Follow the steps in 3.1 to locate the stop on the map
 - Change the toggle to Locality (2.1.2)
 - Dependent in Select Variable input (2.1.3), select the correct locality by name or code (2.1.4)
